@@ -30,10 +30,7 @@ class Puzzle{
         let reduceBoard = [].concat(...this.board);
         let correct = [1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,' '];
         
-        if(reduceBoard.every(x => reduceBoard[x] == correct[x]))
-            return true;
-        else
-            return false;
+        return reduceBoard.every((_,i) => reduceBoard[i] == correct[i]);
             
     }
     
