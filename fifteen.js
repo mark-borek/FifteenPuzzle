@@ -74,7 +74,8 @@ function clickSlide(e){
         divs.forEach((row,i) => row.forEach((s,j) => s.textContent = (fif.board[i][j])));
     
         if(fif.solved()){
-            alert("You Solved The Puzzle!"); 
+            //setTimeout(() = > alert("You Solved The Puzzle!"),1); 
+            alert("You solved the puzzle");
         }
 }
 
